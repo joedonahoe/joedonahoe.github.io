@@ -1,0 +1,35 @@
+body { font-family: verdana, arial, sans-serif;	max-width: 600px; margin-left: auto; margin-right: auto; }
+
+/* This is the title. */
+h1 { 
+	font-size: x-large; 
+	margin-top: 20px; 
+	padding: 5px; 
+	text-align: center; 
+	font-weight: normal; 
+}
+
+/* This is the menu under the title. */
+h2 { 
+	font-size: small; 
+	margin-bottom: 40px; 
+	background-color: cornflowerblue; 
+	text-align: center; 
+	padding: 5px; 
+	font-weight: normal; 
+}
+h2 a:link    { color: white; }
+h2 a:visited { color: white; }
+h2 a:hover   { color: white; }
+h2 a:active  { color: white; }
+
+/* This is the grouping of one-or-more entries. */
+h3 { font-size: normal; }
+
+/* This is the heading of each entry on each page. */ 
+h4 { font-size: small; }
+
+/* This is the text of each entry on each page. */ 
+p { font-size: small; }
+li { font-size: small; }
+
