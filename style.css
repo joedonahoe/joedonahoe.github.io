@@ -12,7 +12,6 @@ h1 {
 /* This is the menu under the title. */
 h2 { 
 	font-size: small; 
-	margin-bottom: 40px; 
 	background-color: cornflowerblue; 
 	text-align: center; 
 	padding: 5px; 
@@ -24,12 +23,17 @@ h2 a:hover   { color: white; }
 h2 a:active  { color: white; }
 
 /* This is the grouping of one-or-more entries. */
-h3 { font-size: normal; }
+h3 { 
+	font-size: normal; 
+}
 
 /* This is the heading of each entry on each page. */ 
-h4 { font-size: small; }
+h4 { 
+	margin-top: 50px; 
+	font-size: small; 
+}
 
 /* This is the text of each entry on each page. */ 
 p { font-size: small; }
 li { font-size: small; }
-
+code { background-color: papayawhip; }

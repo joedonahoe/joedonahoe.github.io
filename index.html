@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 	<head>
-		<title>Joe Donahoe on GitHub</title>
+		<title>Joe Donahoe</title>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
 	<body>
@@ -11,6 +11,32 @@
 			<a href="stuff.html">STUFF</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a href="about.html">ABOUT</a>
 		</h2>
+
+		<h4>2015.09.15 Re-Learning GitHub</h4>
+		<p>My version control usage at my current job is, um, unconventional.  And by "unconventional", I
+		mean I get email approvals, I back changed code up, and then I modify production manually.  My
+		boss is okay with this because the numbers still match the other numbers, the CEO still gets his
+		daily alerts, and the business keeps humming along.</p>
+		<p>Just because "it works", it doesn't mean it's "good".</p>
+		<p>But I want this site to be at least marginally source-controlled, and that means using GitHub
+		(which also provides a cheap and easy web publishing platform).  I haven't used GitHub much since I took
+		some <a href="https://www.coursera.org/course/datascitoolbox">Data Science classes</a> on Coursera.  I need to brush up on some things.</p>
+		<p>I need to read these more in-depth, but these two sources helped me get moving:</p>
+		<ul>
+		<li><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1">GitHub for Beginners</a> by Lauren Orsini.</li>
+		<li><a href="http://blog.osteele.com/posts/2008/05/my-git-workflow/">My Git Workflow</a> by Oliver Steele.</li>
+		</ul>
+		<p>And here's what I did to get rolling:</p>
+		<ol>
+		<li>My local repo was goofed up, so I copied my changes somewhere else, and deleted everything out of the local directory.</li>
+		<li>Then I did a <code>git init</code> to get everything levelset.  Remember when levelset was a nasty project manager word that we all mocked.  Now we all use it?  We're sheep.</li>
+		<li>I did <code>git config --global user.name "joedonahoe"</code> and <code>git config --global email.address "joedonahoe@hibot.goaway"</code>.  That's not my real email address.
+		<li>Then I connected to the mother ship using <code>git remote add origin https://github.com/joedonahoe/joedonahoe.github.io</code>.</li>
+		<li>I dropped in my changes, and asked Git how things looked using <code>git status</code>.  Git said I had one new file (the CSS file) and one modified file (the index.html file).</li>
+		<li>I did <code>git add style.css</code> to add the new file to the local repo.</li>
+		<li>Then I did a <code>git commit -m "2015.09.14"</code> because I'm being lazy at writing check-in comments.  However, that only picked up the new file.  I had to do <code>git commit -a -m "2015.09.14"</code> to also pick up the changed file.</li>
+		<li>Finally, <code>git push origin master</code> and my changes were visible on this site due to the magic of github.io.</li>
+		</ol>
 
 		<h4>2015.09.14 Let's Get This Going</h4>
 		<p>I decided the other day that I needed a place where I can put the kind-of-useful stuff
