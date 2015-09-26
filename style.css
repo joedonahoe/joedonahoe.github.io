@@ -1,4 +1,9 @@
-body { font-family: verdana, arial, sans-serif;	max-width: 600px; margin-left: auto; margin-right: auto; }
+body { 
+	font-family:  verdana, arial, sans-serif;	
+	max-width:    800px; 
+	margin-left:  auto; 
+	margin-right: auto; 
+}
 
 /* This is the title. */
 h1 { 
