@@ -3,16 +3,32 @@
 	<head>
 		<title>Joe Donahoe</title>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script language="javascript" type="text/javascript" src="showhide.js"></script>
 	</head>
-	<body>
+	<body onLoad="showHide();">
 		<h1>Joe Donahoe</h1>
 		<h2>
 			<a href="index.html">LOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a href="stuff.html">STUFF</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a href="about.html">ABOUT</a>
 		</h2>
+		<h3>
+			<a href="index.html">Show All</a>&nbsp;
+			<a href="index.html?search=tableau">tableau</a>&nbsp;
+			<a href="index.html?search=tc15">tc15</a>&nbsp;
+			<a href="index.html?search=git">git</a>&nbsp;
+			<a href="index.html?search=admin">admin</a>&nbsp;
+		</h3>
 
-		<h4>2015.09.25 Tableau Conference 2015</h4>
+		<div class="blogitem 201510 admin javascript">
+		<h4>2015.10.02 Tags On This Page <span class="tag">javascript</span></h4>
+		<p>I mentioned earlier that this site is hand-made HTML and CSS.  Now I've added JavaScript to do tagging
+		functionality.  It isn't a great implementation because selecting a tag causes a full-page reload.  That's
+		not great with the embedded Tableau Public workbooks--you're looking for "git" items, but the Tableau embeds
+		have to reload before the search is executed.  It needs to be implemented without a page reload.  Hmmm.</p>
+
+		<div class="blogitem 201509 tableau tc15">
+		<h4>2015.09.25 Tableau Conference 2015 <span class="tag">tableau, tc15</span></h4>
 		<p>The <a href="http://tc15.tableau.com/">2015 Tableau Conference</a> is next month!</p>
 		<p>Tableau is usually great about publishing the raw data for the conference sessions, and they
 		<a href="http://tc15.tableau.com/data">did it</a> for this year's conference.  I just noticed the web connector
@@ -52,8 +68,10 @@
 				</object>
 			</div>
 		</p>
+		</div>
 
-		<h4>2015.09.15 Re-Learning GitHub</h4>
+		<div class="blogitem 201509 git">
+		<h4>2015.09.15 Re-Learning GitHub <span class="tag">git</span></h4>
 		<p>My version control usage at my current job is, um, unconventional.  And by "unconventional", I
 		mean I get email approvals, I back changed code up, and then I modify production manually.  My
 		boss is okay with this because the numbers still match the other numbers, the CEO still gets his
@@ -78,7 +96,9 @@
 		<li>Then I did a <code>git commit -m "2015.09.14"</code> because I'm being lazy at writing check-in comments.  However, that only picked up the new file.  I had to do <code>git commit -a -m "2015.09.14"</code> to also pick up the changed file.</li>
 		<li>Finally, <code>git push origin master</code> and my changes were visible on this site in about 90 seconds due to the magic of github.io.</li>
 		</ol>
+		</div>
 
+		<div class="blogitem 201509 admin"> <span class="tag">admin</span>
 		<h4>2015.09.14 Let's Get This Going</h4>
 		<p>I decided the other day that I needed a place where I can put the kind-of-useful stuff
 		I build as I'm learning new things and practicing things I think I know.  I tried
@@ -96,6 +116,7 @@
 		<p>
 		On that last point, I am writing with the expectation that I am 95% of my own audience.  And 2% of the audience is seeing how I work.  The other 3% is probably my mother.
 		</p>
+		</div>
 
 		<!-- OLD STUFF -->
 		<!--

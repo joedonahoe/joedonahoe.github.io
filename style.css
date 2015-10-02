@@ -1,4 +1,5 @@
-body { 
+body 
+{ 
 	font-family:  verdana, arial, sans-serif;	
 	max-width:    800px; 
 	margin-left:  auto; 
@@ -6,7 +7,8 @@ body {
 }
 
 /* This is the title. */
-h1 { 
+h1 
+{ 
 	font-size: x-large; 
 	margin-top: 20px; 
 	padding: 5px; 
@@ -15,27 +17,41 @@ h1 {
 }
 
 /* This is the menu under the title. */
-h2 { 
+h2, h3 
+{ 
 	font-size: small; 
 	background-color: cornflowerblue; 
 	text-align: center; 
 	padding: 5px; 
+	margin-bottom: 0px; 
 	font-weight: normal; 
 }
-h2 a:link    { color: white; }
-h2 a:visited { color: white; }
-h2 a:hover   { color: white; }
-h2 a:active  { color: white; }
+h2 a:link   , h3 a:link { color: white; }
+h2 a:visited, h3 a:visited { color: white; }
+h2 a:hover  , h3 a:hover { color: white; }
+h2 a:active , h3 a:active { color: white; }
+h3 
+{
+	font-size: x-small; 
+	margin-top: 0px; 
+}
 
 /* This is the grouping of one-or-more entries. */
-h3 { 
+h3 
+{ 
 	font-size: normal; 
 }
 
 /* This is the heading of each entry on each page. */ 
-h4 { 
+h4 
+{ 
 	margin-top: 50px; 
 	font-size: small; 
+}
+h4 span.tag 
+{
+	color: darkgray; 
+	font-size: smaller; 
 }
 
 /* This is the text of each entry on each page. */ 
