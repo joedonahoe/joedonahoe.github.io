@@ -1,7 +1,7 @@
 // stolen from http://stackoverflow.com/questions/4644673/hide-all-elements-with-class-using-plain-javascript
-function showHide()
+function showHide(classSelected)
 {
-	var classSelected = getQueryVariable('search');
+	//var classSelected = getQueryVariable('search');
 
 	if( !classSelected )
 	{
