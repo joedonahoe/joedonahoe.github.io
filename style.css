@@ -1,60 +1,52 @@
-body 
-{ 
-	font-family:  verdana, arial, sans-serif;	
-	max-width:    800px; 
-	margin-left:  auto; 
-	margin-right: auto; 
-}
-
-/* This is the title. */
-h1 
-{ 
-	font-size: x-large; 
-	margin-top: 20px; 
-	padding: 5px; 
-	text-align: center; 
-	font-weight: normal; 
-}
-
-/* This is the menu under the title. */
-h2, h3 
-{ 
-	font-size: small; 
-	background-color: cornflowerblue; 
-	text-align: center; 
-	padding: 5px; 
-	margin-bottom: 0px; 
-	font-weight: normal; 
-}
-h2 a:link   , h3 a:link { color: white; }
-h2 a:visited, h3 a:visited { color: white; }
-h2 a:hover  , h3 a:hover { color: white; }
-h2 a:active , h3 a:active { color: white; }
-h3 
+html
 {
-	font-size: x-small; 
-	margin-top: 0px; 
+	text-align: center:
 }
 
-/* This is the grouping of one-or-more entries. */
-h3 
-{ 
-	font-size: normal; 
-}
-
-/* This is the heading of each entry on each page. */ 
-h4 
-{ 
-	margin-top: 50px; 
-	font-size: small; 
-}
-h4 span.tag 
+body
 {
-	color: darkgray; 
-	font-size: smaller; 
+	max-width: 800px;
+	text-align: left;
+	margin: 0px auto;
 }
 
-/* This is the text of each entry on each page. */ 
-p { font-size: small; }
-li { font-size: small; }
-code { background-color: papayawhip; }
+h1 /* used for "Joe Donahoe" */
+{
+	margin-bottom: 0px;
+	color: #3399ff;
+}
+
+h2 /* used for "Stuff I Made" */
+{
+	background-color: #3399ff;
+	margin-top: 0px; margin-right: 10px;
+	padding: 5px;
+	padding-bottom: 2px;
+	vertical-align: middle;
+	font-size: 90%;
+	color: white;
+	width: 100%;
+	height: 20px;
+	font-weight: normal;
+}
+
+img.logo {
+	width: 18px;
+	height: 18px;
+	margin: 0px;
+	margin-left: 5px;
+}
+
+span.logos { float: right; }
+
+img.thumbnail { width: 80px; height: 80px; float: left; margin-right: 10px; margin-bottom: 10px; }
+
+div.item    { margin-top: 50px; }
+div.item h4 { margin-bottom: 0px; font-size: 80%; }
+div.item p  { margin-top: 0px; font-size: 80%; }
+
+h3              { margin-top: 50px; margin-bottom: 0px; color: #006600; font-size: smaller; }
+p, li           { font-size: 80% }
+code            { background-color: #f2f09b; }
+div.changelog   { color: #AAAAAA; margin-top: 30px; }
+div.changelog p { margin-top: 2px; margin-bottom: 2px; }

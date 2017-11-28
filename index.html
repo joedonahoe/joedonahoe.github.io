@@ -2,157 +2,49 @@
 <html>
 	<head>
 		<title>Joe Donahoe</title>
-		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<script language="javascript" type="text/javascript" src="showhide.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
+
 		<h1>Joe Donahoe</h1>
-		<h2>
-			<a href="index.html">LOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="stuff.html">STUFF</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="about.html">ABOUT</a>
+		<h2>This is stuff I made.
+			<span class="logos">
+			<a href="mailto:joedonahoe@gmail.com" title="Email"><img class="logo" src="logo_email.png"></img></a>
+			<a href="https://twitter.com/JSD3" title="Twitter"><img class="logo" src="logo_twitter.png"></img></a>
+			<a href="https://github.com/joedonahoe" title="Github"><img class="logo" src="logo_github.png"></img></a>
+			<a href="https://www.linkedin.com/in/joe-donahoe-b0144a1" title="Linked In"><img class="logo" src="logo_linkedin.png"></img></a>
+			</span>
 		</h2>
-		<h3>
-			<a href="index.html">Show All</a>&nbsp;
-			<a href="#" onClick="showHide('tableau');">tableau</a>&nbsp;
-			<a href="#" onClick="showHide('tc15');">tc15</a>&nbsp;
-			<a href="#" onClick="showHide('javascript');">javscript</a>&nbsp;
-			<a href="#" onClick="showHide('git');">git</a>&nbsp;
-			<a href="#" onClick="showHide('admin');">admin</a>&nbsp;
-		</h3>
 
-		<div class="blogitem 201510 admin javascript">
-			<h4>2015.10.05 Tags On This Page, Part II <span class="tag">javascript, admin</span></h4>
-			<p>Yeah, it's better doing in-page JavaScript to filter the tags.  The next big change to this site
-			will be to move the title and links to the side.  Panes are annoying, so it won't be panes (both espn.com
-			and si.com are doing this awkwardly).  It really should be a div that hovers over empty space.</p>
-			<p>And I need to write the Stuff and About pages.</p>
-		</div>
-
-		<div class="blogitem 201510 admin javascript">
-			<h4>2015.10.02 Tags On This Page <span class="tag">javascript, admin</span></h4>
-			<p>I mentioned earlier that this site is hand-made HTML and CSS.  Now I've added JavaScript to do tagging
-			functionality.  It isn't a great implementation because selecting a tag causes a full-page reload.  That's
-			not great with the embedded Tableau Public workbooks--you're looking for "git" items, but the Tableau embeds
-			have to reload before the search is executed.  It needs to be implemented without a page reload.  Hmmm.</p>
-		</div>
-
-		<div class="blogitem 201509 tableau tc15">
-			<h4>2015.09.25 Tableau Conference 2015 <span class="tag">tableau, tc15</span></h4>
-			<p>The <a href="http://tc15.tableau.com/">2015 Tableau Conference</a> is next month!</p>
-			<p>Tableau is usually great about publishing the raw data for the conference sessions, and they
-			<a href="http://tc15.tableau.com/data">did it</a> for this year's conference.  I just noticed the web connector
-			data source--that might be fun to play with.</p>
-			<p>I've been to two previous conferences--Seattle in 2010 and San Diego in 2012.
-			The Tableau conferences are always a mess of sessions.  There are many sessions in a few time slots.  Many
-			are interesting.  Some are done by Tableau community celebrities.  Some apply directly to the day job, and you
-			have to go, since the boss is paying the bill.</p>
-			<p>The tough part about the schedule is picking the sessions and time slots that best fit with my priorities.
-			The viz below lets the user browse the offerings, prioritize, then do some further organization.</p>
-			<p>The viz is also available <a href="https://public.tableau.com/views/TableauConf2015/Intro?:embed=y&:display_count=yes&:showTabs=y&:toolbar=no&:showVizHome=no#9">here</a>.</p>
-			<p>
-				<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'>
-				</script>
-				<!--<div class='tableauPlaceholder' style='width: 1024px; height: 720px;'>-->
-				<div class='tableauPlaceholder' style='width: 800px; height: 600px;'>
-					<noscript>
-						<a href='http:&#47;&#47;joedonahoe.github.io'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;TableauConf2015&#47;Intro&#47;1_rss.png' style='border: none' /></a>
-					</noscript>
-					<object class='tableauViz' width='800' height='600' style='display:none;'>
-						<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-						<param name='site_root' value='' />
-						<param name='name' value='TableauConf2015&#47;Intro' />
-						<param name='tabs' value='yes' />
-						<param name='toolbar' value='no' />
-						<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;TableauConf2015&#47;Intro&#47;1.png' />
-						<param name='animate_transition' value='yes' />
-						<param name='display_static_image' value='yes' />
-						<param name='display_spinner' value='yes' />
-						<param name='display_overlay' value='yes' />
-						<param name='display_count' value='yes' />
-						<param name='showVizHome' value='no' />
-						<param name='showTabs' value='y' />
-						<param name='bootstrapWhenNotified' value='true' />
-					</object>
-				</div>
+		<div class="item">
+			<h4><a href="">Git Cheatsheet</a></h4>
+			<p class="itemDesc">I'm getting this up and running again.  However, the first thing is getting re-acquainted
+			with Git and Github.  I used Github with some <a href="">Data Science courses on Github</a>.  That's nice for
+			the "do this, then that" of large online courses, but now I need to know enough to manage my own work.  Maybe
+			one day I'll be good enough for complex multi-developer environments.</p>
+			<p class="itemDesc">Here are a couple of resources I used.
+				<ul>
+					<li><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/">GitHub for Beginners</a> by Lauren Orsini.</li>
+					<li><a href="http://blog.osteele.com/2008/05/my-git-workflow/">My Git Workflow</a> by Oliver Steele.</li>
+				</ul>
 			</p>
-		</div>
-
-		<div class="blogitem 201509 git">
-			<h4>2015.09.15 Re-Learning GitHub <span class="tag">git</span></h4>
-			<p>My version control usage at my current job is, um, unconventional.  And by "unconventional", I
-			mean I get email approvals, I back changed code up, and then I modify production manually.  My
-			boss is okay with this because the numbers still match the other numbers, the CEO still gets his
-			daily alerts, and the business keeps humming along.</p>
-			<p>Just because "it works", it doesn't mean it's "good".</p>
-			<p>But I want this site to be at least marginally source-controlled, and that means using GitHub
-			(which also provides a cheap and easy web publishing platform).  I haven't used GitHub much since I took
-			some <a href="https://www.coursera.org/course/datascitoolbox">Data Science classes</a> on Coursera.  I need to brush up on some things.</p>
-			<p>I need to read these more in-depth, but these two sources helped me get moving:</p>
-			<ul>
-				<li><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1">GitHub for Beginners</a> by Lauren Orsini.</li>
-				<li><a href="http://blog.osteele.com/posts/2008/05/my-git-workflow/">My Git Workflow</a> by Oliver Steele.</li>
-			</ul>
-			<p>And here's what I did to get rolling:</p>
-			<ol>
-				<li>My local repo was goofed up, so I copied my changes somewhere else, and deleted everything out of the local directory.</li>
-				<li>Then I did a <code>git init</code> to get everything levelset.  Remember when levelset was a nasty project manager word that we all mocked.  Now we all use it?  We're sheep.</li>
-				<li>I did <code>git config --global user.name "joedonahoe"</code> and <code>git config --global email.address "joedonahoe@hibot.goaway"</code>.  That's not my real email address.
+			<p class="item">Here is what I did to get rolling again:
+				<ol>
+				<li>Opened up Git Bash, and navigated to my development folder.</li>
+				<li>I did a <code>git init</code> to get everything levelset.</li>
+				<li>I did <code>git config --global user.name "joedonahoe"</code> and <code>git config --global email.address "joedonahoe@hibot.goaway"</code> to set some variables. That's not my real email address.</li>
 				<li>Then I connected to the mother ship using <code>git remote add origin https://github.com/joedonahoe/joedonahoe.github.io</code>.</li>
-				<li>I dropped in my changes, and asked Git how things looked using <code>git status</code>.  Git said I had one new file (the CSS file) and one modified file (the index.html file).</li>
-				<li>I did <code>git add style.css</code> to add the new file to the local repo.</li>
-				<li>Then I did a <code>git commit -m "2015.09.14"</code> because I'm being lazy at writing check-in comments.  However, that only picked up the new file.  I had to do <code>git commit -a -m "2015.09.14"</code> to also pick up the changed file.</li>
+				<li>I made my changes, and asked Git how things looked using <code>git status</code>.</li>
+				<li>I did <code>git add <i>filename</i></code> and <code>git rm <i>filename</i></code> to get rid of old stuff and add new stuff in the local repo.</li>
+				<li>Then I did a <code>git commit -m "2017 reboot"</code>. However, that only picked up the new file. I had to do <code>git commit -a -m "2017 reboot"</code> to also pick up some other changes.</li>
 				<li>Finally, <code>git push origin master</code> and my changes were visible on this site in about 90 seconds due to the magic of github.io.</li>
-			</ol>
-		</div>
-
-		<div class="blogitem 201509 admin"> <span class="tag">admin</span>
-			<h4>2015.09.14 Let's Get This Going</h4>
-			<p>I decided the other day that I needed a place where I can put the kind-of-useful stuff
-			I build as I'm learning new things and practicing things I think I know.  I tried
-			WordPress, but I didn't really want a blog.  I just wanted a chronological list (this page) and a
-			portfolio (the <a href="stuff.html">Stuff</a> page).</p>
-			<p>So this is that.  More to come.</p>
-			<p>Some design notes:</p>
-			<ul>
-				<li>Since I like simplicity, control, and full understanding, the HTML here is completely manual and edited in TextPad.</li>
-				<li>I un-div'd this page from an earlier document to clean it up.</li>
-				<li>I'm going with cornflower blue because it looks okay with the default HTML link color.  I prefer to use pre-built constants instead of hunting for the perfect hexadecimal code that I'll need to document anyway.</li>
-				<li>I learned that I'm not supposed to put an &lt;ul&gt; or an &lt;ol&gt; inside of a &lt;p&gt;.  Stack Overflow to the <a href="http://stackoverflow.com/questions/5681481/should-ol-ul-be-inside-p-or-outside">rescue</a>.</li>
-				<li>I also prefix my working files with the date in YYYY.MM.DD format.  As in "2015.08.15 Research That Weird Sales Order.sql".  So I'm using the same format here.</li>
-			</ul>
-			<p>
-			On that last point, I am writing with the expectation that I am 95% of my own audience.  And 2% of the audience is seeing how I work.  The other 3% is probably my mother.
+				</ol>
 			</p>
 		</div>
 
-		<!-- OLD STUFF -->
 		<!--
-		<div class="group">Tableau</div>
-
-		<div class="repo">
-			<div class="repoTitle"><a href="http://public.tableausoftware.com/views/DaystarFantasyFootball2013Weeks1-9/TeamPerformanceByWeek?:showVizHome=no&:embed=y">Fantasy Football Season Status, November 2013</a></div>
-			<div class="repoNote">I was really happy with how this visualization worked out, and it looks good six months later.  Unlike some of my earlier fantasy sports analysis, I polished these vizzes off with my own conclusion.  The addition of the informed conclusions make the "story" work better for the consumer on the first glance, and the graphic assists with deeper data-gazing.</div>
-		</div>
-		<div class="repo">
-			<div class="repoTitle"><a href="http://public.tableausoftware.com/views/MonstarsCategoryAnalysis/dashboard?:showVizHome=no&:embed=y">Fantasy Basketball Analysis, November 2012</a></div>
-			<div class="repoNote">A viz I built for a fantasy basketball league sometime in late 2012.  It is hosted on Tableau Public.  This shows which fantasy categories (points, field goal percentage, steals, etc.) a team is doing well or not-so-well in.  My team (Pittsylvania Blue) ended up winning league with Kevin Durant, Carmelo Anthony, and a stockpile of big men and shoot-first guards.  The primary factor in winning this league was a studs-and-duds auction draft.  But that good draft would have been a waste if I hadn't been monitoring the strengths/weaknesses of the entire team and the net effect of free agent moves.</div>
-		</div>
-		<div>
-			<div class="repoTitle"><a href="http://public.tableausoftware.com/views/FantasyFootball2012-ESPN/dashboard?:showVizHome=no&:embed=y">Fantasy Football Draft Analysis, August 2012</a></div>
-			<div class="repoNote">A viz I built for a fantasy football league draft.  Given some projected stats and an unconventional scoring formula, what positions should be targeted at which points in the draft?  This viz wasn't designed for public use, so there is a regrettable lack of explanation about what's going on.  And the axis labeling is non-existent (a big data visualization no-no).  Also, it turned out that my statistical projections were wildly unreliable, so I did very poorly in this league :).
-		</div>
-
-		<div class="group">Class Projects</div>
-
-		<div class="repo">
-			<div class="repoTitle"><a href="https://github.com/joedonahoe/ProgrammingAssignment2">Programming Assignment #2 for R Programming Class, April 2014</a></div>
-			<div class="repoNote">A function written for <a href="https://www.coursera.org/course/rprog">R Programming</a> on Coursera.  Written in R.</div>
-		</div>
-
-		<div class="repo">
-			<div class="repoTitle"><a href="https://github.com/joedonahoe/ProgrammingAssignment3">Programming Assignment #3 for R Programming Class, April 2014</a></div>
-			<div class="repoNote">A function written for <a href="https://www.coursera.org/course/rprog">R Programming</a> on Coursera.  This is reworked code that was original developed in <a href="https://www.coursera.org/course/compdata">Computing for Data Analysis</a>.  Written in R.</div>
+		<div class="item">
+			<p>This is another thing.</p>
 		</div>
 		-->
 
