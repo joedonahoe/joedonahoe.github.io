@@ -1,52 +1,43 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
-	<head>
-		<title>Joe Donahoe</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-
-		<h1>Joe Donahoe</h1>
-		<h2>This is stuff I made.
-			<span class="logos">
-			<a href="mailto:joedonahoe@gmail.com" title="Email"><img class="logo" src="logo_email.png"></img></a>
-			<a href="https://twitter.com/JSD3" title="Twitter"><img class="logo" src="logo_twitter.png"></img></a>
-			<a href="https://github.com/joedonahoe" title="Github"><img class="logo" src="logo_github.png"></img></a>
-			<a href="https://www.linkedin.com/in/joe-donahoe-b0144a1" title="Linked In"><img class="logo" src="logo_linkedin.png"></img></a>
-			</span>
-		</h2>
-
-		<div class="item">
-			<h4><a href="">Git Cheatsheet</a></h4>
-			<p class="itemDesc">I'm getting this up and running again.  However, the first thing is getting re-acquainted
-			with Git and Github.  I used Github with some <a href="">Data Science courses on Github</a>.  That's nice for
-			the "do this, then that" of large online courses, but now I need to know enough to manage my own work.  Maybe
-			one day I'll be good enough for complex multi-developer environments.</p>
-			<p class="itemDesc">Here are a couple of resources I used.
-				<ul>
-					<li><a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/">GitHub for Beginners</a> by Lauren Orsini.</li>
-					<li><a href="http://blog.osteele.com/2008/05/my-git-workflow/">My Git Workflow</a> by Oliver Steele.</li>
-				</ul>
-			</p>
-			<p class="item">Here is what I did to get rolling again:
-				<ol>
-				<li>Opened up Git Bash, and navigated to my development folder.</li>
-				<li>I did a <code>git init</code> to get everything levelset.</li>
-				<li>I did <code>git config --global user.name "joedonahoe"</code> and <code>git config --global email.address "joedonahoe@hibot.goaway"</code> to set some variables. That's not my real email address.</li>
-				<li>Then I connected to the mother ship using <code>git remote add origin https://github.com/joedonahoe/joedonahoe.github.io</code>.</li>
-				<li>I made my changes, and asked Git how things looked using <code>git status</code>.</li>
-				<li>I did <code>git add <i>filename</i></code> and <code>git rm <i>filename</i></code> to get rid of old stuff and add new stuff in the local repo.</li>
-				<li>Then I did a <code>git commit -m "2017 reboot"</code>. However, that only picked up the new file. I had to do <code>git commit -a -m "2017 reboot"</code> to also pick up some other changes.</li>
-				<li>Finally, <code>git push origin master</code> and my changes were visible on this site in about 90 seconds due to the magic of github.io.</li>
-				</ol>
-			</p>
-		</div>
-
-		<!--
-		<div class="item">
-			<p>This is another thing.</p>
-		</div>
-		-->
-
-	</body>
+    <style>
+    <!--
+        body { font-family: verdana; }
+        h2 { font-size: smaller; }
+        p { font-weight: normal; }
+        ol { font-weight: normal; }
+        code { background-color: paleturquoise; font-family: lucida console; }
+    -->
+    </style>
+    <body>
+        <h1>J O E&nbsp;&nbsp;&nbsp;D O N A H O E</h1>
+        <h2><a href="https://twitter.com/JSD3">Twitter</a>&nbsp;&nbsp;&nbsp;<a href="http://joedonahoe.github.io/">Github</a>&nbsp;&nbsp;&nbsp;<a href="https://public.tableau.com/profile/joed6314#!/">Tableau Public</a><h2>
+        <div class="article">
+            <h3>2018.09.04 :: Get Git Set Up</h3>
+            <p>
+            I want each of these exercises to be done in one hour.  I was planning on giving myself 30 minutes to get my Git environment setup and I'm 29 minutes in, and still haven't documented my Git commands or pushed back up to the server.  
+            </p>
+            <p>
+                Here is how I got started:  
+                <ol>
+                <li>Open Git Bash.  After installing Git, of course.</li>
+                <li>Go to the local folder where you want to do your work.  I did mine in simply c:\git</li>
+                <li>Run <code>git init</code>.  Then I did <code>git config --global user.name "joedonahoe"</code> and <code>git remote add origin https://github.com/joedonahoe/joedonahoe.github.io</code>.  I had these in an earlier document, but I'm not exactly sure why I needed them.</li>
+                <li>Now to pull the existing objects down.  Run <code>git clone https://github.com/joedonahoe/joedonahoe.github.io</code>.</li>
+                <li>And run <code>git status</code>.  Nothing has changed.  You can also run "dir -all" to see the files' current state.</li>
+                <li>Make some changes.  For me, I used "rm *" to throw away all of the old stuff.  Then I created a new "index.html" in the folder.</li>  
+                <li>Run <code>git status</code>, and I have a lot of changes to send to the server.</li>
+                </ol>
+            </p>
+        </div>
+        <div class="article">
+            <h3>2018.09.04 :: Intro</h3>
+            <p>
+            This is my practice space for Tableau.  Maybe I'll get other tools here (JS, Python, R).  
+            But just Tableau for now.  And I'll give myself a time limit so I don't have much time to play and polish things.  
+            I will mostly work off of Andy Kriebel's Makeover Monday columns over on <a href="http://www.vizwiz.com">VizWiz</a>.  
+            If you have a moment, I would recommend reading Mr. Kriebel's blog.  
+            This little site is served up on github.io, and built using handwritten HTML.
+            </p>
+        </div>
+    </body>
 </html>
