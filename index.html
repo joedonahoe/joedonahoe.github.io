@@ -1,7 +1,8 @@
 <html>
+    <title>Joe Donahoe</title>
     <style>
     <!--
-        body { font-family: verdana; }
+        body { font-family: verdana; max-width: 800px; }
         h1 { margin-bottom: 0px; } /* title */
         h2 { font-size: smaller; margin-top: 0px; } /* links */
         h3 { margin-top: 50px; } /* each article's heading */
@@ -12,7 +13,37 @@
     </style>
     <body>
         <h1>J O E&nbsp;&nbsp;&nbsp;D O N A H O E</h1>
-        <h2><a href="https://twitter.com/JSD3">Twitter</a>&nbsp;&nbsp;&nbsp;<a href="http://joedonahoe.github.io/">Github</a>&nbsp;&nbsp;&nbsp;<a href="https://public.tableau.com/profile/joed6314#!/">Tableau Public</a><h2>
+        <h2><a href="https://twitter.com/JSD3">Twitter</a>&nbsp;&nbsp;&nbsp;<a href="http://github.com/joedonahoe">Github</a>&nbsp;&nbsp;&nbsp;<a href="https://public.tableau.com/profile/joed6314#!/">Tableau Public</a><h2>
+        <div class="article">
+        <h3>2018.09.04 :: VizWiz Monday Makeover - Where Nike Makes Stuff</h3>
+        <p>
+        This is a response to a <a href="http://www.vizwiz.com/2018/09/nike.html">this</a>.  This is a fun little exercise.  
+        The data is by factory/country/city, with some percentages at the record level.  
+        I used those percentages to get totals, then used those totals to aggregate up.  
+        The by-factory data was a little interesting (example, one Vietnamese factory has a lot more migrant workers than the others).  
+        It was also tempting to use a map with the geographic data (news flash: Nike a lot of factories in China).  
+        </p>
+        <p>
+        But the best simply rendering of the data was below.  By setting the axis to the same scale (default in 9.1, not in 2018.2), we can see where the workers are.  I would like a little more time with this, but today's time is up.  
+        </p>
+        <p>
+                <div class='tableauPlaceholder' id='viz1536084609280' style='position: relative'><noscript><a href='#'>
+                <img alt='Country ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wh&#47;WhereNikeProductsAreMade&#47;Country&#47;1_rss.png' style='border: none' /></a></noscript>
+                <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+                <param name='name' value='WhereNikeProductsAreMade&#47;Country' /><param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wh&#47;WhereNikeProductsAreMade&#47;Country&#47;1.png' /> 
+                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                
+                <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1536084609280');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                vizElement.style.width='600px';vizElement.style.height='627px';                    
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+        </p>
+        </div> 
         <div class="article">
             <h3>2018.09.04 :: Get Git Set Up</h3>
             <p>
