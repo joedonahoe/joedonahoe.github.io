@@ -5,16 +5,54 @@
         body { font-family: verdana; max-width: 800px; margin: auto; /* to center */ }
         h1 { margin-bottom: 0px; margin-top: 50px; } /* title */
         h2 { font-size: smaller; margin-top: 0px; } /* links */
-        h3 { margin-top: 50px; } /* each article's heading */
+        h3 { margin-top: 100px; } /* each article's heading */
         p { font-weight: normal; } /* text for each article */
         ol { font-weight: normal; } 
         code { background-color: paleturquoise; font-family: lucida console; }
     -->
     </style>
     <body>
+        
         <h1>J O E&nbsp;&nbsp;&nbsp;D O N A H O E</h1>
         <h2><a href="https://twitter.com/JSD3">Twitter</a>&nbsp;&nbsp;&nbsp;<a href="http://github.com/joedonahoe">Github</a>&nbsp;&nbsp;&nbsp;<a href="https://public.tableau.com/profile/joed6314#!/">Tableau Public</a><h2>
+        
+
+
         <div class="article">
+        <a id="20180905nba"></a>
+        <h3>2018.09.05 :: NBA Salaries Against the Cap (VizWiz Makeover Monday)</h3> 
+        <p>
+        This is from an older Makeover Monday post of Andy Kriebel's.  His original post is <a href=" http://www.vizwiz.com/2018/07/nba-salary-scorecard.html">here.</a>
+        The original visualization from What's The Cap was actually pretty nice, if stylistically old.  I thought they were missing an important element--does the cap overage help win?  
+        That's the point of going over the salary cap, right?  
+        The [m/b]illionaire owners gamble on the extra salary and the financial penalties, if they think it will bring them championship glory.  
+        </p>
+        <p>So I added winning percentage and whether the team won the championship for a handful of the years.  
+        The data comes from Basketball-Reference.com.  Each year's data was pulled separately, then compiled in an Excel workbook.  
+        I also modified the season nomenclature (I would say "2017-2018", Andy says "2018", and Basketball-Reference.com says "2017").  
+        </p>
+        <p>
+            <!-- Tableau Generated Embed -->
+            <div class='tableauPlaceholder' id='viz1536170048309' style='position: relative'><noscript><a href='#'><img alt='Cap Over vs Win % ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBATeamSalariesAgainsttheCap_0&#47;CapOvervsWin&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NBATeamSalariesAgainsttheCap_0&#47;CapOvervsWin' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBATeamSalariesAgainsttheCap_0&#47;CapOvervsWin&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1536170048309');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='627px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </p>
+        <p>I really like the simplicity of this, along with the clear resulting message.  
+        Between 2010 and 2018, big spending didn't really help you win in the regular season, or win the championship.  
+        But you did need to spend at least a little to win more than 70% of your games or the championship (see all those blue dots on the bottom of the graph).  
+        </p>
+        <p>Then here is this more complicated visualization.</p>
+        <p>
+            <!-- Tableau Generated Embed -->
+            <div class='tableauPlaceholder' id='viz1536170568964' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBATeamSalariesAgainsttheCap_0&#47;WinningBySeason&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NBATeamSalariesAgainsttheCap_0&#47;WinningBySeason' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBATeamSalariesAgainsttheCap_0&#47;WinningBySeason&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1536170568964');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='650px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </p>
+        <p>You can click on a team on the left, and find them in the mess of lines on the right.  Either of these visualzations are mediocre by themselves
+        (the left side is simplistic, and lacks the time element; the right side is too much data to use).  But the combination through actions makes the data
+        more understandable.  
+        </p>
+        </div>
+
+
+        <div class="article">
+        <a id="20180904nike"></a>
         <h3>2018.09.04 :: VizWiz Monday Makeover - Where Nike Makes Stuff</h3>
         <p>
         This is a response to a <a href="http://www.vizwiz.com/2018/09/nike.html">this</a>.  This is a fun little exercise.  
@@ -45,38 +83,47 @@
                 </script>
         </p>
         </div> 
+        
+        
+        
         <div class="article">
-            <h3>2018.09.04 :: Get Git Set Up</h3>
-            <p>
-            I want each of these exercises to be done in one hour.  I was planning on giving myself 30 minutes to get my Git environment setup and I'm 29 minutes in, and still haven't documented my Git commands or pushed back up to the server.  
-            </p>
-            <p>
-                Here is how I got started:  
-                <ol>
-                <li>Open Git Bash.  After installing Git, of course.</li>
-                <li>Go to the local folder where you want to do your work.  I did mine in simply c:\git</li>
-                <li>Run <code>git init</code>.  Then I did <code>git config --global user.name "joedonahoe"</code> and <code>git remote add origin https://github.com/joedonahoe/joedonahoe.github.io</code>.  I had these in an earlier document, but I'm not exactly sure why I needed them.</li>
-                <li>Now to pull the existing objects down.  Run <code>git clone https://github.com/joedonahoe/joedonahoe.github.io</code>.</li>
-                <li>And run <code>git status</code>.  Nothing has changed.  You can also run "dir -all" to see the files' current state.</li>
-                <li>Make some changes.  For me, I used "rm *" to throw away all of the old stuff.  Then I created a new "index.html" in the folder.</li>  
-                <li>Run <code>git status</code>, and I have a lot of changes to send to the server.</li>
-                <li>Then I ran <code>git commit -a -m "2018 Reboot"</code> and <code>git push origin master</code>.  
-                </ol>
-            </p>
-            <p>This is intended as a minimal Git reference.  
-            I highly recommend <a href="http://rogerdudler.github.io/git-guide/">git - the simple guide</a> and <a href="https://blog.osteele.com/2008/05/my-git-workflow/">My Git Workflow</a> for further reading.  
-            This little bit was supposed to take me 30 minutes, and it took my 49 minutes.  Oh well.  
-            </p>
+        <a id="20180904git"></a>
+        <h3>2018.09.04 :: Get Git Set Up</h3>
+        <p>
+        I want each of these exercises to be done in one hour.  I was planning on giving myself 30 minutes to get my Git environment setup and I'm 29 minutes in, and still haven't documented my Git commands or pushed back up to the server.  
+        </p>
+        <p>
+            Here is how I got started:  
+            <ol>
+            <li>Open Git Bash.  After installing Git, of course.</li>
+            <li>Go to the local folder where you want to do your work.  I did mine in simply c:\git</li>
+            <li>Run <code>git init</code>.  Then I did <code>git config --global user.name "joedonahoe"</code> and <code>git remote add origin https://github.com/joedonahoe/joedonahoe.github.io</code>.  I had these in an earlier document, but I'm not exactly sure why I needed them.</li>
+            <li>Now to pull the existing objects down.  Run <code>git clone https://github.com/joedonahoe/joedonahoe.github.io</code>.</li>
+            <li>And run <code>git status</code>.  Nothing has changed.  You can also run "dir -all" to see the files' current state.</li>
+            <li>Make some changes.  For me, I used "rm *" to throw away all of the old stuff.  Then I created a new "index.html" in the folder.</li>  
+            <li>Run <code>git status</code>, and I have a lot of changes to send to the server.</li>
+            <li>Then I ran <code>git commit -a -m "2018 Reboot"</code> and <code>git push origin master</code>.  
+            </ol>
+        </p>
+        <p>This is intended as a minimal Git reference.  
+        I highly recommend <a href="http://rogerdudler.github.io/git-guide/">git - the simple guide</a> and <a href="https://blog.osteele.com/2008/05/my-git-workflow/">My Git Workflow</a> for further reading.  
+        This little bit was supposed to take me 30 minutes, and it took my 49 minutes.  Oh well.  
+        </p>
         </div>
+       
+       
+       
         <div class="article">
-            <h3>2018.09.04 :: Intro</h3>
-            <p>
-            This is my practice space for Tableau.  Maybe I'll get other tools here (JS, Python, R).  
-            But just Tableau for now.  And I'll give myself a time limit so I don't have much time to play and polish things.  
-            I will mostly work off of Andy Kriebel's Makeover Monday columns over on <a href="http://www.vizwiz.com">VizWiz</a>.  
-            If you have a moment, I would recommend reading Mr. Kriebel's blog.  
-            This little site is served up on github.io, and built using handwritten HTML in Visual Studio Code.
-            </p>
+        <a id="20180904intro"></a>
+        <h3>2018.09.04 :: Intro</h3>
+        <p>
+        This is my practice space for Tableau.  Maybe I'll get other tools here (JS, Python, R).  
+        But just Tableau for now.  And I'll give myself a time limit so I don't have much time to play and polish things.  
+        I will mostly work off of Andy Kriebel's Makeover Monday columns over on <a href="http://www.vizwiz.com">VizWiz</a>.  
+        If you have a moment, I would recommend reading Mr. Kriebel's blog.  
+        This little site is served up on github.io, and built using handwritten HTML in Visual Studio Code.
+        </p>
         </div>
+
     </body>
 </html>
