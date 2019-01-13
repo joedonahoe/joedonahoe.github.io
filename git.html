@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Joe Git</title>
+        <style>
+        <!--
+        body { font-family: 'lucida console'; max-width: 600px; margin: auto; /* to center */ }
+        p, li { font-size: smaller; }
+        code { background-color: lightskyblue; }
+        -->
+        </style>
+    </head>    
+    <body>
+        <h1>Joe's Git Cheatsheet</h1>
+        <p><a href="index.html">Main Page</a></p>
+        <p>
+            Here is how I got started:  
+            <ol>
+                <li>Open Git Bash.  After installing Git, of course.</li>
+                <li>Go to the local folder where you want to do your work.  I did mine in simply c:\git</li>
+                <li>Run <code>git init</code>.  Then I did <code>git config --global user.name "joedonahoe"</code> and <code>git remote add origin https://github.com/joedonahoe/joedonahoe.github.io</code>.  I had these in an earlier document, but I'm not exactly sure why I needed them.</li>
+                <li>Now to pull the existing objects down.  Run <code>git clone https://github.com/joedonahoe/joedonahoe.github.io</code>.</li>
+                <li>And run <code>git status</code>.  Nothing has changed.  You can also run "dir -all" to see the files' current state.</li>
+                <li>Make some changes.  For me, I used "rm *" to throw away all of the old stuff.  Then I created a new "index.html" in the folder.</li>  
+                <li>Run <code>git status</code>, and I have a lot of changes to send to the server.</li>
+                <li>Then I ran <code>git commit -a -m "2018 Reboot"</code> and <code>git push origin master</code>.  
+            </ol>
+        </p>
+        <p>
+            Sources: 
+            <ol>
+                <li><a href="http://rogerdudler.github.io/git-guide/">git - the simple guide</a></li>
+                <li><a href="https://blog.osteele.com/2008/05/my-git-workflow/">My Git Workflow</a></li>
+            </ol>
+        </p>
+    </body>
+</html>
